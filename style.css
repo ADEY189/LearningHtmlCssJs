@@ -1,0 +1,36 @@
+#header{
+    display: inline-block;
+    overflow: hidden;
+}
+#header span{
+    display: inline-block;
+    animation-name:slide;
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+#header span :nth-child(1){
+    animation-delay:2s;
+}
+#header span :nth-child(2){
+    animation-delay:3s;
+    
+}
+#header span :nth-child(3){
+    animation-delay: 5s;
+    
+}
+
+
+
+@keyframes slide {
+    from{
+        transform:translateX(100%);
+    }
+
+    to{ 
+        transform:translateX(0)
+    }
+
+    
+}
